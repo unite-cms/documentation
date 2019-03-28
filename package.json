@@ -1,6 +1,6 @@
 {
-  "name": "documentation",
-  "version": "1.0.0",
+  "name": "Unite cms",
+  "version": "0.8.0",
   "description": "",
   "main": "index.js",
   "scripts": {
