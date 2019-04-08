@@ -15,22 +15,22 @@ module.exports = {
         sidebar: [
             {
                 title: 'GETTING STARTED',
-                path: '/docs/getting-started/'
+                path: '/getting-started/'
             },
             
             {
                 title: 'BASIC CONCEPTS',
-                path: '/docs/basic-concepts/'
+                path: '/basic-concepts/'
             },
 
             {
                 title: 'FIELDS',
-                path: '/docs/fields/'
+                path: '/fields/'
             },
 
             {
                 title: 'VIEWS',
-                path: '/docs/views/'
+                path: '/views/'
             }
         ]      
     }

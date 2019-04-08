@@ -18,7 +18,7 @@ footer: By unite | Copyright © 2019
 ### DOCUMENTATION
 
 <!-- Falscher Pfad -->
-![img](docs/images/unite_logo.png) 
+![img](/images/unite_logo.png) 
 
 
 
