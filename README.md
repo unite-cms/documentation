@@ -2,10 +2,10 @@
 
 The documentation is divided into sub folders (topics):
 
--> /docs/getting-started
--> /docs/basic-concepts
--> /docs/fields
--> /docs/views
+-> /getting-started
+-> /basic-concepts
+-> /fields
+-> /views
 
 The content of each topic is stored in an README.md file.
 
@@ -16,7 +16,7 @@ If you create a new main topic you have to add it to the sidebar,
 subtopics will be added automatically.
 
 Sidebar configuration:
--> config.js
+-> docs/.vuepress/config.js
 
 
 # Formatting in Markdown
