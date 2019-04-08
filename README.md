@@ -2,12 +2,12 @@
 
 The documentation is divided into sub folders (topics):
 
-| Header                | 
+| Documentation Folder                | 
 | --------------------- | 
-| /getting-started      |
-| /basic-concepts       |
-| /fields               |
-| /views                |
+| src/getting-started      |
+| src/basic-concepts       |
+| src/fields               |
+| src/views                |
  
 
 The content of each topic is stored in an README.md file.
