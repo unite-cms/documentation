@@ -17,7 +17,8 @@ footer: By unite | Copyright © 2019
 #  UNITE CMS v0.8.0
 ### DOCUMENTATION
 
-![img](images/unite_logo.png)
+<!-- Falscher Pfad -->
+![img](docs/images/unite_logo.png) 
 
 
 

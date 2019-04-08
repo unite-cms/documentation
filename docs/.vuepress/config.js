@@ -1,6 +1,7 @@
 module.exports = {
     title: 'unite cms',
     description: 'v0.8.0',
+    // base: '/docs/',
     themeConfig: {
         nav: [
             {text: 'Unite cms', link: 'https://www.unitecms.io/index.html' },
