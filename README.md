@@ -2,10 +2,13 @@
 
 The documentation is divided into sub folders (topics):
 
--> /getting-started
--> /basic-concepts
--> /fields
--> /views
+| Header                | 
+| --------------------- | 
+| /getting-started      |
+| /basic-concepts       |
+| /fields               |
+| /views                |
+ 
 
 The content of each topic is stored in an README.md file.
 
@@ -23,16 +26,21 @@ Sidebar configuration:
 
 - Create Headlines:
 
+```
 # h1
 ## h2
 ### h3
 #### h4
+```
 
 - bold text:
+```
 **text**
+```
 
 - italic text:
-_text_
+```_text_
+```
 
 - Displaying code:
 
