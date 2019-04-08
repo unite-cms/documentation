@@ -39,7 +39,8 @@ Sidebar configuration:
 ```
 
 - italic text:
-```_text_
+```
+_text_
 ```
 
 - Displaying code:
