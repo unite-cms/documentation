@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>VIEWS | unite cms</title>
-    <meta name="description" content="v0.8.0">
+    <meta name="description" content="v0.8.2">
     
     
-    <link rel="preload" href="/assets/css/0.styles.566aa82f.css" as="style"><link rel="preload" href="/assets/js/app.45a821bc.js" as="script"><link rel="preload" href="/assets/js/2.2b66fb61.js" as="script"><link rel="preload" href="/assets/js/9.90931501.js" as="script"><link rel="prefetch" href="/assets/js/10.93e26d41.js"><link rel="prefetch" href="/assets/js/3.51772b33.js"><link rel="prefetch" href="/assets/js/4.0e45021d.js"><link rel="prefetch" href="/assets/js/5.24509748.js"><link rel="prefetch" href="/assets/js/6.82dc5cc8.js"><link rel="prefetch" href="/assets/js/7.5468d669.js"><link rel="prefetch" href="/assets/js/8.be2cd8b0.js">
-    <link rel="stylesheet" href="/assets/css/0.styles.566aa82f.css">
+    <link rel="preload" href="/assets/css/0.styles.a4309099.css" as="style"><link rel="preload" href="/assets/js/app.be3f434b.js" as="script"><link rel="preload" href="/assets/js/2.996da34c.js" as="script"><link rel="preload" href="/assets/js/10.1f54a49c.js" as="script"><link rel="prefetch" href="/assets/js/3.081f793d.js"><link rel="prefetch" href="/assets/js/4.7bfbca31.js"><link rel="prefetch" href="/assets/js/5.ecf469f3.js"><link rel="prefetch" href="/assets/js/6.736c2640.js"><link rel="prefetch" href="/assets/js/7.365d2286.js"><link rel="prefetch" href="/assets/js/8.287966cc.js"><link rel="prefetch" href="/assets/js/9.26ee670e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a4309099.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">unite cms</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://www.unitecms.io/index.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
@@ -75,21 +75,16 @@
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre></div><p><strong>FULL FIELD CONFIGURATION</strong></p> <p>Configure title, identifier, type and settings for your fields. The following example would display one title column and one blocks column where all collection rows will be displayed.</p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
-  ...<span class="token punctuation">,</span>
-  <span class="token property">&quot;fields&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token property">&quot;views&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
     <span class="token punctuation">{</span>
-      <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Title&quot;</span><span class="token punctuation">,</span>
-      <span class="token property">&quot;identifier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;title&quot;</span><span class="token punctuation">,</span>
-      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">{</span>
-      <span class="token property">&quot;identifier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;blocks&quot;</span><span class="token punctuation">,</span>
-      <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Blocks&quot;</span><span class="token punctuation">,</span>
-      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;collection&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;All&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;identifier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;all&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;table&quot;</span><span class="token punctuation">,</span>
       <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-      <span class="token property">&quot;fields&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-        <span class="token property">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Icon&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Content&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;wysiwyg&quot;</span> <span class="token punctuation">}</span>
+        <span class="token property">&quot;fields&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Icon&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Content&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;wysiwyg&quot;</span> <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
       <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">]</span>
@@ -153,6 +148,6 @@
         <a href="/fields/" class="prev">
           FIELDS
         </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.45a821bc.js" defer></script><script src="/assets/js/2.2b66fb61.js" defer></script><script src="/assets/js/9.90931501.js" defer></script>
+    <script src="/assets/js/app.be3f434b.js" defer></script><script src="/assets/js/2.996da34c.js" defer></script><script src="/assets/js/10.1f54a49c.js" defer></script>
   </body>
 </html>
