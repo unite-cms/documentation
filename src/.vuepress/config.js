@@ -1,6 +1,6 @@
 module.exports = {
     title: 'unite cms',
-    description: 'v0.8.0',
+    description: 'v0.8.2',
     // base: '/docs/',
     themeConfig: {
         nav: [

@@ -1,26 +1,14 @@
 ---
-home: false
-heroImage: /images/unite_logo.png
+home: true
+heroImage: images/unite_logo.png
 actionText: Documentation →
-actionLink: /docs/getting-started/ #Link noch einzufügen
+actionLink: getting-started/
 features:
-- title: Documentation
-  details: Minimal setup with markdown-centered project structure helps you focus on writing.
-- title: Vue-Powered
-  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-- title: Performant
-  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-tagline: 
-footer: By unite | Copyright © 2019
+- title: Manage all your data in one place
+  details: Building your CRM, CMS, asset management or door access control system with unite cms enables you to manage all your data in one place.
+- title: Build content structures that fit your needs
+  details: Use our GraphQL API to deliver your custom structured content to your unite cms projects. Your website, app, CRM or accounting system – you name it.
+- title: Stay agile with rapid prototyping and easy redesigns
+  details: Start off prototyping quickly and refine your archetype step by step without getting disrupted by your content management system.
+footer: Büro unite | www.unite.co.at | Vienna 2019
 ---
-
-#  UNITE CMS v0.8.0
-### DOCUMENTATION
-
-<!-- Falscher Pfad -->
-![img](/images/unite_logo.png) 
-
-
-
-
-
