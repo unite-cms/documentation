@@ -83,21 +83,16 @@ Configure title, identifier, type and settings for your fields. The following ex
 
 ```JSON
 {
-  ...,
-  "fields": [
+  "views": [
     {
-      "title": "Title",
-      "identifier": "title",
-      "type": "text"
-    },
-    {
-      "identifier": "blocks",
-      "title": "Blocks",
-      "type": "collection",
+      "title": "All",
+      "identifier": "all",
+      "type": "table",
       "settings": {
-      "fields": {
-        "icon": { "label": "Icon", "type": "text", "settings": [] },
-        "content": { "label": "Content", "type": "wysiwyg" }
+        "fields": {
+          "icon": { "label": "Icon", "type": "text", "settings": [] },
+          "content": { "label": "Content", "type": "wysiwyg" }
+        }
       }
     }
   ]
