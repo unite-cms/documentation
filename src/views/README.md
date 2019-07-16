@@ -1,6 +1,6 @@
 # VIEWS
 
-_For each Content Type you can define one or multiple views for the management view of your content. The default view is a table, that just displays field columns and action buttons for each content row. Another example would be a media grid with drag and drop support view, that allows the user to sort images directly in the view. At the moment there are just two basic views available, however are planing to implement many different views (Kanban board, etc.) in the future!_
+_For each Content Type you can define one or multiple views for the management view of your content. The default view is a table, that just displays field columns and action buttons for each content row. Another example would be a media grid with drag and drop support view, that allows the user to sort images directly in the view. At the moment there are just two basic views available, however we are planing to implement many different views (Kanban board, etc.) in the future!_
 
 <!-- ######################################## -->
 

@@ -63,9 +63,9 @@ See also our [medium tutorial](https://medium.com/unite-cms/how-to-setup-unite-c
 
 unite cms allows you to define your content structure by writing a single JSON document per domain. That means instead of an administration interface you will get an editor where you can define a schema for your content, webhooks, permissions etc.
 
-Starting with version 0.7, for any custom installation of unite cms the domain configuration will (also) be saved to the filesystem and can be edited using any code editor. After changing a domain config in the filesystem, You can come import the changes using the unite cms domain editor.
+Starting with version 0.7, for any custom installation of unite cms the domain configuration will (also) be saved to the filesystem and can be edited using any code editor. After changing a domain config in the filesystem, you can import the changes using the unite cms domain editor.
 
-After your registered on unitecms.io you can add your First Domain which brings you to the domain configuration screen. For a quick example, you can just copy the domain definition for a simple example blog. The only thing you need to do now is to enter s3 bucket information or to skip this, you can just delete the image field. 
+After you registered on unitecms.io you can add your first domain which brings you to the domain configuration screen. For a quick example, you can just copy the domain definition for a simple example blog. The only thing you need to do now is to enter s3 bucket information or to skip this, you can just delete the image field. 
 
 ### Variables: Reusable snippets
 Domain definitions have a special property: variables. This property allows you to define reusable snippets in your domain configuration. This snippets will get replaced just before the JSON gets parsed and validated. For example you can save the toolbar settings for a wysiwyg editor in a variable and use it on multiple wysiwyg fields:

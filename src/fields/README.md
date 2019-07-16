@@ -22,9 +22,9 @@ Depending on the field type there are different settings allowed and required. F
 ### Common settings
 All field types allow to define at least the optional **"description"** setting which is just a text and will be rendered below the field.
 
-All (core) field types except collection, checkbox, sortindex and state also allow to define an **"not_empty"**  option which will make this field required (and also add validation). 
+All (core) field types except collection, checkbox, sortindex and state also allow to define a **"not_empty"**  option which will make this field required (and also add validation). 
 
-All (core) field types except collection, reference, sortindex, state,  also allow to define an **"default"** option. The content of "default" will be used as a field value when you create a new content / setting object and can be changed by the user. 
+All (core) field types except collection, reference, sortindex, state and also allow to define a **"default"** option. The content of "default" will be used as a field value when you create a new content / setting object and can be changed by the user. 
 **Note:** Depending on the field type, the default option excepts a string or a nested structure: 
 
 ```JSON
@@ -163,7 +163,7 @@ Renders an input element that accepts any numeric input. This field has no setti
 <!-- ######################################## -->
 
 ## Phone
-Renders a HTML 5 tel input element. Note: The phone field to not validate any input. This field has no settings.
+Renders a HTML 5 tel input element. Note: The phone field does not validate any input. This field has no settings.
 
 ```JSON
 {
@@ -192,7 +192,7 @@ Renders a slider input element that allows to select one value between **min** a
 <!-- ######################################## -->
 
 ## Reference
-This field holds a reference to an content element. The content element can be of this or any other domain in this organization. **Note:** Make sure, that the content editor is allows to access the referenced domain and content type, otherwise he_she will not be able to fill out this field.
+This field holds a reference to a content element. The content element can be of this or any other domain in this organization. **Note:** Make sure, that the content editor is allowed to access the referenced domain and content type, otherwise he_she will not be able to fill out this field.
 
 ```JSON
 {
@@ -208,7 +208,7 @@ This field holds a reference to an content element. The content element can be o
 }
 ```
 
-When using the GraphQL API, referenced content will be resolved automatically allowing you to selected nested fields of the referenced content:
+When using the GraphQL API, referenced content will be resolved automatically allowing you to select nested fields of the referenced content:
 
 ```GraphQL
 {
@@ -327,7 +327,7 @@ Renders a text input field.
 <!-- ######################################## -->
 
 ## Collection
-Collection fields allows you to create a repeatable container of one or multiple subfields. They can be used to allow multiple values for one field or to create complex content structures.
+Collection fields allow you to create a repeatable container of one or multiple subfields. They can be used to allow multiple values for one field or to create complex content structures.
 
 The following example would create an input element that allows to add 1-5 tags (min_rows and max_rows are optional).
 

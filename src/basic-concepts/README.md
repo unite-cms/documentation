@@ -22,11 +22,11 @@ Organizations in unite cms are the top level entities that contain all users and
 
 Each user of an organization can login into this organization but cannot access any domains unless he_she is a member of the domain. Users can become organization admins. Organization admins can invite new users, assign the administration role to existing users, create api keys, create new domains and are allowed to access all domains.
 
-Note: Because organization admins can bypass all security checks you should use an user account with organization admin privileges only for administrative tasks and use normal users for content editing.
+Note: Because organization admins can bypass all security checks you should use a user account with organization admin privileges only for administrative tasks and use normal users for content editing.
 
 ### API KEY
 
-Organization admins can create API keys. By using this keys, clients can access the GraphQL API. API keys can only access domains, they are members of. One API key can be member of multiple domains, which is especially necessary if you want to create a reference between different domains.
+Organization admins can create API keys. By using this keys, clients can access the GraphQL API. API keys can only access domains they are members of. One API key can be member of multiple domains, which is especially necessary if you want to create a reference between different domains.
 
 ### DOMAIN
 
@@ -62,7 +62,7 @@ Domain configuration is done by creating or updating its JSON configuration. Exa
 
 This domain would provide one content type "Website" and no setting types. By default, each domain contains an **"Editor"** and **"Viewer"** member type. Editors have the permission to manage all content and settings, viewers can only read it.
 
-For the website example, you could create an API key and add it as a Viewer Domain Member to the website domain. Now your website can do an GraphQL API request to the unite cms api endpoint of your domain and gets all page headlines to display them:
+For the website example, you could create an API key and add it as a Viewer Domain Member to the website domain. Now your website can do a GraphQL API request to the unite cms API endpoint of your domain and gets all page headlines to display them:
 
 ```graphql
 # https://{YOUR-ORG}.unitecms.io/website/api?token={TOKEN}
@@ -81,7 +81,7 @@ Each domain can define an infinit number of **content_types, setting_types** and
 <!-- ######################################## -->
 
 ## Content Types
-Each new content type in unite cms comes with no fields and one view ("all") per default. By adding fields, you can define all kind of content schemas (for example news articles, web pages, invoices or products). By changing the settings of the "all" view or by adding additional views, you can define different management collections of you content. For example a content type "Webpages" could have a default view that allows sorting the content for displaying a navigation list and a second view that shows all pages that are marked for internal review. For more information about all available views, see chapter "Views".
+Each new content type in unite cms comes with no fields and one view ("all") per default. By adding fields, you can define all kind of content schemas (for example news articles, web pages, invoices or products). By changing the settings of the "all" view or by adding additional views, you can define different management collections of your content. For example a content type "Webpages" could have a default view that allows sorting the content for displaying a navigation list and a second view that shows all pages that are marked for internal review. For more information about all available views, see chapter "Views".
 
 To improve the UX for your content editors, you can set an optional icon from the icon set, unite cms is using [(Feather)](https://feathericons.com/).
 
@@ -114,7 +114,7 @@ To improve the UX for your content editors, you can set an optional icon from th
            "title": "Needs review",
            "identifier": "review",
            "type": "table",
-           "settings": { "filter": { "field": "needs_review", "operator": "=", "value": "1" }
+           "settings": { "filter": { "field": "needs_review", "operator": "=", "value": "1" }}
        }
     ]
 }
@@ -122,7 +122,7 @@ To improve the UX for your content editors, you can set an optional icon from th
 
 For each content type you can define permissions, using a very powerful expression engine that is described in chapter "Permissions".
 
-For each content type, the GraphQL API of your domain defines a **find{CONTENT_TYPE}** query object as well as an **create{CONTENT_TYPE}** and **update{CONTENT_TYPE}** mutation object. If you want to query content from multiple content types together, you can use the generic **find** query object.
+For each content type, the GraphQL API of your domain defines a **find{CONTENT_TYPE}** query object as well as a **create{CONTENT_TYPE}** and **update{CONTENT_TYPE}** mutation object. If you want to query content from multiple content types together, you can use the generic **find** query object.
 
 
 ```graphql
@@ -191,11 +191,11 @@ To learn more about the GraphQL API, see the chapter "GraphQL API" or use a clie
 
 ## Domain member types
 
-Each domain comes with two domain member types per default: "Viewer" and "Editor". You can modify or delete this types and add any number of types, however there must be at least one domain member type for each domain. 
+Each domain comes with two domain member types per default: "Viewer" and "Editor". You can modify or delete these types and add any number of types; however, there must be at least one domain member type for each domain. 
 
-Each API key and each CMS user of your organization must become a member of your domain in order to get access to it. So even if you set a content type read permission to "true" (= always grant access) for example, only members of the domain can actually see the content. 
+Each API key and each CMS user of your organization must become a member of your domain in order to get access to it. For example: if you set read permission to "true" (=always grant access), only members of the domain can actually see the content.
 
-Domain member types are similar to content types and can also define any number of fields. At the moment this fields can only be used to save content and inside a permission check expression, in the future we might implement an API endpoint to allow you to query and create members.
+Domain member types are similar to content types and can also define any number of fields. At the moment this fields can only be used to save content and inside a permission check expression In the future we might implement an API endpoint to allow you to query and create members.
 
 ```JSON
 "domain_member_types": [
@@ -387,7 +387,7 @@ The following example shows a validator which prevents an empty firstname on con
 <!-- ######################################## -->
 
 ## Multilingual
-Per default, each new content and setting type comes without an location. However, unite cms allows you to define multiple locales per type by adding a "locales" entry: 
+Per default, each new content and setting type comes without a location. However, unite cms allows you to define multiple locales per type by adding a "locales" entry: 
 
 ```JSON
 {
@@ -440,7 +440,7 @@ query {
 <!-- ######################################## -->
 
 ## GraphQL API
-The heart of unite cms is its GraphQL API. It allows you to query and manipulate your content and settings. GraphQL APIs are very powerful and allows you to get exactly the fields you need from exactly the content items you want to query. If you are new to GraphQL you should read the [introduction from graphql.org](https://graphql.org/learn/) before you continue.
+The heart of unite cms is its GraphQL API. It allows you to query and manipulate your content and settings. GraphQL APIs are very powerful and allow you to get exactly the fields you need from exactly the content items you want to query. If you are new to GraphQL you should read the [introduction from graphql.org](https://graphql.org/learn/) before you continue.
 
 Each domain comes with its own API endpoint: # 
 **https://{ORG}.unitecms.io/{DOMAIN}/api.** In order to access the api, you need to provide an authentication token from an API Key that is a member of the domain. You should always use the HTTP **Authentication head field** to send the token, but it is also possible to add a GET **token** query parameter to the API url. 
@@ -551,7 +551,7 @@ mutation {
 
 ### Filtering
 
-All query find objects allows you to reduce the result, using an optional filter input parameter. The filter input has the following basic structure: 
+All query find objects allow you to reduce the result, using an optional filter input parameter. The filter input has the following basic structure: 
 
 ```GraphQL
 filter: {
@@ -578,7 +578,7 @@ filter: {
 ```
 
 ### Pagination
-All query find objects allows you to limit the result using a limit and page input field. To get the first 10 items, you could do: 
+All query find objects allow you to limit the result using a limit and page input field. To get the first 10 items, you could do: 
 
 ```GraphQL
 find(limit: 10, page: 1) { ... }
