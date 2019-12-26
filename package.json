@@ -1,6 +1,6 @@
 {
   "name": "unite-cms-documentation",
-  "version": "0.8.0",
+  "version": "0.10.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vuepress": "^0.14.10"
-  },
-  "devDependencies": {
-    "eslint": "^5.15.1",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "webpack-dev-middleware": "^3.6.1"
+    "vuepress": "^1.2.0"
   }
 }
