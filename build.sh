@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-vuepress build docs
-cd docs/.vuepress/dist
+vuepress build src -d docs
+cd docs
 echo 'docs.unitecms.io' > CNAME
