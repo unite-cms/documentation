@@ -7,7 +7,7 @@
     <meta name="description" content="0.10">
     
     
-    <link rel="preload" href="/assets/css/0.styles.c1534a3f.css" as="style"><link rel="preload" href="/assets/js/app.3df7ab8d.js" as="script"><link rel="preload" href="/assets/js/2.2bf75bb3.js" as="script"><link rel="preload" href="/assets/js/6.4d5eb0e9.js" as="script"><link rel="prefetch" href="/assets/js/3.9f6d9071.js"><link rel="prefetch" href="/assets/js/4.3ff2fe10.js"><link rel="prefetch" href="/assets/js/5.1267dd32.js"><link rel="prefetch" href="/assets/js/7.4f9eddd5.js"><link rel="prefetch" href="/assets/js/8.b8005952.js"><link rel="prefetch" href="/assets/js/9.789901e0.js">
+    <link rel="preload" href="/assets/css/0.styles.c1534a3f.css" as="style"><link rel="preload" href="/assets/js/app.691afd2a.js" as="script"><link rel="preload" href="/assets/js/2.2bf75bb3.js" as="script"><link rel="preload" href="/assets/js/6.d7f6ec34.js" as="script"><link rel="prefetch" href="/assets/js/3.9f6d9071.js"><link rel="prefetch" href="/assets/js/4.3ff2fe10.js"><link rel="prefetch" href="/assets/js/5.1d83f009.js"><link rel="prefetch" href="/assets/js/7.9e1483eb.js"><link rel="prefetch" href="/assets/js/8.541cb93c.js"><link rel="prefetch" href="/assets/js/9.789901e0.js">
     <link rel="stylesheet" href="/assets/css/0.styles.c1534a3f.css">
   </head>
   <body>
@@ -19,9 +19,79 @@
   Website
   <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/unite-cms/unite-cms" target="_blank" rel="noopener noreferrer" class="nav-link external">
   Github
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs/" class="active sidebar-link">Getting started</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/#installation" class="sidebar-link">Installation</a></li><li class="sidebar-sub-header"><a href="/docs/#hello-world" class="sidebar-link">Hello World</a></li></ul></li><li><a href="/docs/fields/" class="sidebar-link">Fields</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="getting-started"><a href="#getting-started" class="header-anchor">#</a> Getting started</h1> <p>TODO</p> <h2 id="installation"><a href="#installation" class="header-anchor">#</a> Installation</h2> <p>TODO</p> <h2 id="hello-world"><a href="#hello-world" class="header-anchor">#</a> Hello World</h2> <p>TODO</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/docs/fields/">Fields</a>
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs/" class="active sidebar-link">Getting started</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/#installation" class="sidebar-link">Installation</a></li><li class="sidebar-sub-header"><a href="/docs/#hello-world" class="sidebar-link">Hello World</a></li></ul></li><li><a href="/docs/fields/" class="sidebar-link">Fields</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="getting-started"><a href="#getting-started" class="header-anchor">#</a> Getting started</h1> <p>unite cms is a decoupled content management system that allows you to manage all kind of content in one application.
+You can configure data schemas with any kind of data / user / setting types. Via the admin interface you and your
+content editors can manage content according to the defined types. unite cms does not provide any frontend rendering
+layer, so beside of the admin interface, the only way to access the content is via a GraphQL API.</p> <h2 id="installation"><a href="#installation" class="header-anchor">#</a> Installation</h2> <p>unite cms is a a set of Symfony bundles that can be added to any Symfony application. This is the default way to
+install and use unite cms with all core bundles, however you can also use only a subset of the core bundles or
+customize the installation steps:</p> <div class="language-shell script extra-class"><pre class="language-text"><code>    # 1. Install new symfony application (version 4.4 or 5)
+    symfony new unite
+
+    cd unite
+
+    # 2. Require all unite cms core bundles
+    composer require unite-cms/unite-pack
+
+    # 3. Generate ssh keys for JWT
+    # Please see https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/index.md#generate-the-ssh-keys
+
+    # 4. Add / modify env variables in .env.local
+    # DATABASE_URL=mysql://user:password@127.0.0.1:3306/database
+    # JWT_PASSPHRASE=passphrase
+    # MAILER_FROM=noreply@example.com
+    # MAILER_URL=smtp://127.0.0.1:1025
+
+    # 5. Install &amp; build assets for the admin interface
+    # Add webpack.config.js from https://github.com/unite-cms/unite-cms/blob/master/webpack.config.js
+    # Add assets from https://github.com/unite-cms/unite-cms/tree/master/assets
+    yarn install
+    yarn build    
+
+    # 6. Create doctrine database schema
+    bin/console doctrine:database:create
+    bin/console doctrine:schema:update --force
+</code></pre></div><h2 id="hello-world"><a href="#hello-world" class="header-anchor">#</a> Hello World</h2> <p>Once, unite cms is installed, you can create your first domain by defining a GraphQL schema file in config/unite/default/schema.graphql:</p> <div class="language-graphql extra-class"><pre class="language-graphql"><code><span class="token comment"># Content / User Types</span>
+<span class="token string">&quot;&quot;</span><span class="token string">&quot;Demo Content&quot;</span><span class="token string">&quot;&quot;</span>
+<span class="token keyword">type</span> <span class="token class-name">DemoContent</span> <span class="token keyword">implements</span> <span class="token class-name">UniteContent</span> <span class="token punctuation">{</span>
+    <span class="token attr-name">id</span><span class="token punctuation">:</span> ID
+    <span class="token attr-name">_meta</span><span class="token punctuation">:</span> UniteContentMeta
+
+    <span class="token string">&quot;&quot;</span><span class="token string">&quot;Demo title&quot;</span><span class="token string">&quot;&quot;</span>
+    <span class="token attr-name">title</span><span class="token punctuation">:</span> String<span class="token operator">!</span> <span class="token directive function">@textField</span>
+
+    <span class="token string">&quot;&quot;</span><span class="token string">&quot;Content&quot;</span><span class="token string">&quot;&quot;</span>
+    <span class="token attr-name">content</span><span class="token punctuation">:</span> String <span class="token directive function">@textField</span><span class="token punctuation">(</span><span class="token attr-name">escape</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token string">&quot;&quot;</span><span class="token string">&quot;Administrators&quot;</span><span class="token string">&quot;&quot;</span>
+<span class="token keyword">type</span> <span class="token class-name">Admin</span> <span class="token keyword">implements</span> <span class="token class-name">UniteUser</span>
+<span class="token directive function">@passwordAuthenticator</span><span class="token punctuation">(</span><span class="token attr-name">passwordField</span><span class="token punctuation">:</span> <span class="token string">&quot;password&quot;</span><span class="token punctuation">)</span>
+<span class="token directive function">@emailPasswordReset</span><span class="token punctuation">(</span><span class="token attr-name">emailField</span><span class="token punctuation">:</span> <span class="token string">&quot;username&quot;</span><span class="token punctuation">,</span> <span class="token attr-name">passwordField</span><span class="token punctuation">:</span> <span class="token string">&quot;password&quot;</span><span class="token punctuation">)</span>
+<span class="token directive function">@emailInvite</span><span class="token punctuation">(</span><span class="token attr-name">if</span><span class="token punctuation">:</span> <span class="token string">&quot;%(IS_ADMIN)%&quot;</span><span class="token punctuation">,</span> <span class="token attr-name">emailField</span><span class="token punctuation">:</span> <span class="token string">&quot;username&quot;</span><span class="token punctuation">,</span> <span class="token attr-name">passwordField</span><span class="token punctuation">:</span> <span class="token string">&quot;password&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token attr-name">_meta</span><span class="token punctuation">:</span> UniteContentMeta
+    <span class="token attr-name">id</span><span class="token punctuation">:</span> ID
+    <span class="token attr-name">username</span><span class="token punctuation">:</span> String<span class="token operator">!</span> <span class="token directive function">@emailField</span>
+    <span class="token attr-name">password</span><span class="token punctuation">:</span> <span class="token constant">NULL</span> <span class="token directive function">@passwordField</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># Admin fragments</span>
+<span class="token keyword">fragment</span> <span class="token fragment function">content</span> <span class="token keyword">on</span> <span class="token class-name">DemoContent</span> <span class="token directive function">@tableAdminView</span> <span class="token punctuation">{</span>
+    title <span class="token directive function">@adminField</span><span class="token punctuation">(</span><span class="token attr-name">inlineCreate</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+    content <span class="token directive function">@wysiwygAdminField</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">fragment</span> <span class="token fragment function">admins</span> <span class="token keyword">on</span> <span class="token class-name">Admin</span> <span class="token directive function">@tableAdminView</span> <span class="token punctuation">{</span>
+    username
+<span class="token punctuation">}</span>
+</code></pre></div><p>Based on this schema you can now create your first admin user and login into unite cms:</p> <div class="language-shell script extra-class"><pre class="language-text"><code>    bin/console unite:schema:validate # Validate the schema
+    bin/console unite:user:create # Create first admin user
+
+    # Now you are ready to run the unite cms admin dev server and login with your admin user:
+    symfony serve
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/docs/fields/">Fields</a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.3df7ab8d.js" defer></script><script src="/assets/js/2.2bf75bb3.js" defer></script><script src="/assets/js/6.4d5eb0e9.js" defer></script>
+    <script src="/assets/js/app.691afd2a.js" defer></script><script src="/assets/js/2.2bf75bb3.js" defer></script><script src="/assets/js/6.d7f6ec34.js" defer></script>
   </body>
 </html>
